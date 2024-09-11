@@ -7,7 +7,7 @@ const categoryRouter=require('./routers/categoryRoutes')
 const productRouter=require('./routers/productRoutes')
 const orderRouter = require('./routers/orderRoutes')
 const cors =require('cors')
-const dotenv=require('dotenv').config()
+require('dotenv').config()
 
 
 
@@ -17,8 +17,6 @@ app.use(express.json())
 app.use(cors({
     
     credentials: true,
-  
-     origin:"http://localhost:3000"
     
  }))
  app.use('/auth/api',authRouter)

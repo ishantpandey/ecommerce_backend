@@ -22,7 +22,7 @@ const authUser=async(req,res,next)=>{
 const isAdmin=async(req,res,next)=>{
 try {
   const userRole= await User.findById(req.user.id)
-  console.log(req.user);
+  
   if(userRole.role !== 1){
     res.status(401).send({sucsess:false,
       msg:'unauthorised'

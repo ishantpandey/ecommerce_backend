@@ -17,7 +17,7 @@ const createCategory=async(req,res)=>{
         return res.status(200).send({success:true,msg:'created'})
     }
    } catch (error) {
-    console.log(error);
+    return res.status(500).send({success:false,msg:'server error',error})
    }
 }
 //----------------------------Update Category------------------------
