@@ -1,11 +1,11 @@
 const mongoose=require('mongoose')
-const { trim } = require('validator')
+
 
 const userSchema= new mongoose.Schema({
     names:{
         type:String,
         require:true,
-        trim:true
+        
     },
     email:{
         type:String,

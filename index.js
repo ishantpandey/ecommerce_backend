@@ -8,9 +8,6 @@ const productRouter=require('./routers/productRoutes')
 const orderRouter = require('./routers/orderRoutes')
 const cors =require('cors')
 require('dotenv').config()
-
-
-
 app.use(cookieparser())
 app.use(express.json())
 
